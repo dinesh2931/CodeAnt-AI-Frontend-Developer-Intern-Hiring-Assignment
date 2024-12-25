@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAnt AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="flex w-full h-full flex-col md:flex-row">
+    <div id="sideBar" class="flex flex-col w-full md:w-64 bg-white md:h-screen border-r relative">
+        <!-- Sidebar Header -->
+        <div class="flex justify-between md:justify-around w-full px-4 items-center">
+            <div class="flex items-center justify-center gap-4 h-16">
+                <img src="assets/logo.svg" alt="logo" class="w-6" />
+                <h1 class="text-lg font-semibold">CodeAnt AI</h1>
+            </div>
+            <div class="flex md:hidden">
+                <button id="toggleButton">
+                    <img src="icons/bars.svg" alt="toggle" class="w-6" />
+                </button>
+            </div>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <nav id="navLinks" class="flex-1 px-4 py-2 space-y-2">
+            <a href="#" class="flex items-center px-4 py-2 text-sm font-medium bg-[#1570EF] text-white rounded-lg">
+                <img src="icons/home.svg" alt="home" class="w-6" />
+                <span class="ml-3">Repositories</span>
+            </a>
+            <a href="#" class="flex items-center px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
+                <img src="icons/code.svg" alt="code" class="w-6" />
+                <span class="ml-3">AI Code Review</span>
+            </a>
+            <a href="#" class="flex items-center px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
+                <img src="icons/cloud.svg" alt="cloud" class="w-6" />
+                <span class="ml-3">Cloud Security</span>
+            </a>
+            <a href="#" class="flex items-center px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
+                <img src="icons/book.svg" alt="book" class="w-6" />
+                <span class="ml-3">How to Use</span>
+            </a>
+            <a href="#" class="flex items-center px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
+                <img src="icons/settings.svg" alt="settings" class="w-6" />
+                <span class="ml-3">Settings</span>
+            </a>
+        </nav>
+
+        <div class="px-4 py-4">
+            <a href="#" class="flex items-center px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
+                <img src="icons/phone.svg" alt="phone" class="w-5" />
+                <span class="ml-3">Support</span>
+            </a>
+            <a href="#" class="flex items-center px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
+                <img src="icons/logout.svg" alt="logout" class="w-5" />
+                <button id="logoutButton" class="ml-3">Logout</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="h-screen w-full box-border overflow-y-auto">
+        <h1>Home Page</h1>
+        <!-- Button to navigate to repositories -->
+        <button id="repositoriesButton" class="px-4 py-2 bg-blue-500 text-white rounded">Go to Repositories</button>
+        <!-- Your main content goes here -->
+    </div>
+</div>
+
+<script>
+// Logout button functionality
+document.getElementById("logoutButton").addEventListener("click", function() {
+    // Redirect to the login page
+    window.location.href = "login.html";  // Replace "login.html" with the actual path to your login page
+});
+
+// Repositories button functionality
+document.getElementById("repositoriesButton").addEventListener("click", function() {
+    // Redirect to the repositories page
+    window.location.href = "repositories.html";  // Replace "repositories.html" with the actual path to your repositories page
+});
+</script>
+
+</body>
+</html>

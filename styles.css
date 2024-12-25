@@ -1,0 +1,90 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    display: flex;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+/* Flexbox container */
+.flex {
+    display: flex;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+/* Sidebar Styles */
+#sideBar {
+    width: 250px;
+    background-color: #1f2937;
+    color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#sideBar.show {
+    transform: translateX(0);
+}
+
+#sideBar .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#sideBar img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#sideBar h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#sideBar nav {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+#sideBar nav a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #e5e7eb;
+    transition: background-color 0.2s ease;
+}
+
+#sideBar nav a:hover {
+    background-color: #4b5563;
+    color: white;
+}
+
+#sideBar nav a.active {
+    b
