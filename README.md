@@ -38,6 +38,8 @@ Search functionality for filtering repositories dynamically.
 Clean and Modular Code: Built with scalability and maintainability in mind.
 Folder Structure
 plaintext
+
+
 Copy code
 CodeAnt-AI-Frontend-Developer-Intern-Hiring-Assignment/
 ├── assets/
